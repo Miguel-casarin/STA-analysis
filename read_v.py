@@ -4,6 +4,19 @@ class Get_IO:
     def __init__(self, file):
         self.file = file
 
+    def verilog_module(self):
+        
+        with open(self.file, "r") as f:
+            content = f.read()
+            module_name = re.search(r"^\s*module\s+(\w+)", content, re.MULTILINE)
+
+            if module_name:
+                print(f"Find module {module_name.group(1)} from {file}")
+                return module_name.group(1)
+            
+            else:
+                return None 
+
     def get_inputs(self):
 
         inputs_list = []
@@ -51,18 +64,23 @@ class Get_IO:
             
             return gates_id
 
-file = "c499.v"
+def debug_Get_IO(file):
+    debug = Get_IO(file)
 
-teste = Get_IO(file)
-inputs = teste.get_inputs()
+    debug.verilog_module()
 
-for i in inputs:
-    print(i)
+    inputs = debug.get_inputs()
+    for i in inputs:
+        print(i)
 
-outputs = teste.get_outputs()
+    outputs = debug.get_outputs()
+    for o in outputs:
+        print(o)
 
-for o in outputs:
-    print(o)
+    cells = debug.gat_cells_ids()
+    print("Cells Ids \n")
+    for c in cells:
+        print(c)
 
-cells = teste.gat_cells_ids()
-print(cells)
+#file = "c17.v"
+#debug_Get_IO(file)
