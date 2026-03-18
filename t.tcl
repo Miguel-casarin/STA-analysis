@@ -1,5 +1,5 @@
 read_liberty ed_Nangate.lib
-read_verilog c17.v
+read_verilog c17/111111__c17__X2.v
 link_design c17
 
 create_clock -name virt_clk -period 1.1
