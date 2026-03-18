@@ -85,6 +85,8 @@ class Edit_tcl:
 def number_outputs(outputs_list):
     return len(outputs_list)
 
+
+# debug 
 tcl_file = f"t.tcl"
 design = "c17.v"
 link = "c17"
@@ -92,17 +94,20 @@ paths = 2
 inputs_list = ["N1", "N2", "N3", "N6", "N7"]
 outputs_list = ["N22", "N23"]
 
-debug = Edit_tcl(
+"""debug = Edit_tcl(
     tcl_file,
     design,
     link,
     paths,
     inputs_list,
     outputs_list
-)
+)"""
 
 #debug.ed_device()
 #debug.link_design()
 #debug.paths_total()
 #debug.parse_inputs()
 #debug.parse_outputs()
+
+#ou = number_outputs(outputs_list)
+#print(ou)

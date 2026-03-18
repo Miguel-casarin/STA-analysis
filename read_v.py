@@ -11,7 +11,7 @@ class Get_IO:
             module_name = re.search(r"^\s*module\s+(\w+)", content, re.MULTILINE)
 
             if module_name:
-                print(f"Find module {module_name.group(1)} from {file}")
+                print(f"Find module {module_name.group(1)} from {self.file}")
                 return module_name.group(1)
             
             else:
