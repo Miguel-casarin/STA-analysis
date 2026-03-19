@@ -1,16 +1,38 @@
+import subprocess 
+import re
+import os 
+
 import read_v
 import ed_tcl
 import dir
 
 file_tcl = "t.tcl"
 dir_circuits = 'c17/'
+dir_out = 'out_c17/'
 
 circuits = dir.get_files(dir_circuits)
+
+def name_str(string):
+    id = re.match(r'^([^_]+)', string)
+
+    if id:
+        return id.group(1)
+
+def open_sta(tcl_script, n_save, out_dir):
+    n_save = f"{n_save}.txt"
+    output_path = os.path.join(out_dir, n_save)
+
+    with open(output_path, "w") as f:
+          subprocess.run(
+            ["sta", tcl_script],
+            stdout=f,
+            stderr=subprocess.STDOUT,  # STDOUT serve para mostrar os erros
+            text=True
+        )
 
 for circuit in circuits:
     file_verilog = f"{circuit}"   
 
-    # passa também o diretório para o Get_IO
     verilog_reader = read_v.Get_IO(file_verilog, dir_circuits)
 
     module_design = verilog_reader.verilog_module()
@@ -20,7 +42,6 @@ for circuit in circuits:
 
     number_paths = ed_tcl.number_outputs(outputs_signals)
 
-    # caminho completo para escrever no t.tcl
     design_path = f"{dir_circuits}{file_verilog}"
 
     script_sta = ed_tcl.Edit_tcl(
@@ -37,3 +58,15 @@ for circuit in circuits:
     script_sta.paths_total()
     script_sta.parse_inputs()
     script_sta.parse_outputs()
+
+    name_txt = name_str(file_verilog)
+    print(f"TXT name {name_txt}")
+
+    try:
+        open_sta(file_tcl, name_txt, dir_out)
+        print(f"Circuit {file_verilog}")
+    
+    except:
+        print("Erro to run OpenSTA")
+        
+    
