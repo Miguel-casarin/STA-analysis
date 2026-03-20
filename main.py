@@ -64,7 +64,7 @@ for circuit in circuits:
 
     try:
         open_sta(file_tcl, name_txt, dir_out)
-        print(f"Circuit {file_verilog}")
+        print(f"Circuit {file_verilog} analyzes in STA")
     
     except:
         print("Erro to run OpenSTA")
