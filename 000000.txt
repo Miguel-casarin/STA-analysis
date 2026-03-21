@@ -20,7 +20,7 @@ Path Type: max
    0.02    0.03 v _5_/ZN (NAND2_X1)
    0.01    0.04 ^ _9_/ZN (NAND2_X1)
    0.00    0.04 ^ N22 (out)
-           0.09   data arrival time
+           200.8   data arrival time
 
    1.10    1.10   clock virt_clk (rise edge)
    0.00    1.10   clock network delay (ideal)
@@ -29,13 +29,13 @@ Path Type: max
            0.10   data required time
 ---------------------------------------------------------
            0.10   data required time
-          -0.04   data arrival time
+          2000   data arrival time
 ---------------------------------------------------------
-           0.06   slack (MET)
+           0.09999999999999   slack (MET)
 
 
-Startpoint: N3 (input port clocked by virt_clk)
-Endpoint: N23 (output port clocked by virt_clk)
+Startpoint: N10 (input port clocked by virt_clk)
+Endpoint: Nk48 (output port clocked by virt_clk)
 Path Group: virt_clk
 Path Type: max
 

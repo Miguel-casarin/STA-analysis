@@ -1,0 +1,1664 @@
+File 000000.txt ad to circuit list
+File 000001.txt ad to circuit list
+File 000010.txt ad to circuit list
+File 000011.txt ad to circuit list
+File 000100.txt ad to circuit list
+File 000101.txt ad to circuit list
+File 000110.txt ad to circuit list
+File 000111.txt ad to circuit list
+File 001000.txt ad to circuit list
+File 001001.txt ad to circuit list
+File 001010.txt ad to circuit list
+File 001011.txt ad to circuit list
+File 001100.txt ad to circuit list
+File 001101.txt ad to circuit list
+File 001110.txt ad to circuit list
+File 001111.txt ad to circuit list
+File 010000.txt ad to circuit list
+File 010001.txt ad to circuit list
+File 010010.txt ad to circuit list
+File 010011.txt ad to circuit list
+File 010100.txt ad to circuit list
+File 010101.txt ad to circuit list
+File 010110.txt ad to circuit list
+File 010111.txt ad to circuit list
+File 011000.txt ad to circuit list
+File 011001.txt ad to circuit list
+File 011010.txt ad to circuit list
+File 011011.txt ad to circuit list
+File 011100.txt ad to circuit list
+File 011101.txt ad to circuit list
+File 011110.txt ad to circuit list
+File 011111.txt ad to circuit list
+File 100000.txt ad to circuit list
+File 100001.txt ad to circuit list
+File 100010.txt ad to circuit list
+File 100011.txt ad to circuit list
+File 100100.txt ad to circuit list
+File 100101.txt ad to circuit list
+File 100110.txt ad to circuit list
+File 100111.txt ad to circuit list
+File 101000.txt ad to circuit list
+File 101001.txt ad to circuit list
+File 101010.txt ad to circuit list
+File 101011.txt ad to circuit list
+File 101100.txt ad to circuit list
+File 101101.txt ad to circuit list
+File 101110.txt ad to circuit list
+File 101111.txt ad to circuit list
+File 110000.txt ad to circuit list
+File 110001.txt ad to circuit list
+File 110010.txt ad to circuit list
+File 110011.txt ad to circuit list
+File 110100.txt ad to circuit list
+File 110101.txt ad to circuit list
+File 110110.txt ad to circuit list
+File 110111.txt ad to circuit list
+File 111000.txt ad to circuit list
+File 111001.txt ad to circuit list
+File 111010.txt ad to circuit list
+File 111011.txt ad to circuit list
+File 111100.txt ad to circuit list
+File 111101.txt ad to circuit list
+File 111110.txt ad to circuit list
+File 111111.txt ad to circuit list
+__________________________________________________
+000000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+000001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+000010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _6_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+000011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.01  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.01  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+000100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+000101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+000110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+000111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.01  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.01  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+001000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+001001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+001010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _6_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+001011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+001100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+001101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+001110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _6_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+001111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _6_  NANDX2  delay=0.01  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+010000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+010001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+010010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _6_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+010011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.01  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.01  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+010100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+010101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+010110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+010111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.01  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.01  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+011000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+011001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+011010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _6_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+011011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+011100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+011101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+011110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _6_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+011111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _6_  NANDX2  delay=0.01  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+100000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+100001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+100010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+100011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.01  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+100100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+100101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+100110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+100111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+101000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+101001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+101010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _6_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+101011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+101100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.04
+Arrival    : 0.06
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.05
+  _9_  NANDX2  delay=0.01  time=0.06
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.04
+Arrival    : 0.06
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.05
+  _7_  NANDX2  delay=0.01  time=0.06
+----------------------------------------
+__________________________________________________
+101101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+101110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+101111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+110000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+110001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+110010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+110011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.01  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+110100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+110101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+110110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX1  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+110111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _7_  NANDX1  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+111000.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+111001.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+111010.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _6_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+111011.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _6_  NANDX1  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+__________________________________________________
+111100.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.04
+Arrival    : 0.06
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.05
+  _9_  NANDX2  delay=0.01  time=0.06
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.04
+Arrival    : 0.06
+Células:
+  _4_  NANDX1  delay=0.02  time=0.02
+  _5_  NANDX1  delay=0.02  time=0.05
+  _7_  NANDX2  delay=0.01  time=0.06
+----------------------------------------
+__________________________________________________
+111101.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX2  delay=0.01  time=0.01
+  _5_  NANDX1  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+111110.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _9_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.05
+Arrival    : 0.05
+Células:
+  _4_  NANDX1  delay=0.03  time=0.03
+  _5_  NANDX2  delay=0.02  time=0.04
+  _7_  NANDX2  delay=0.01  time=0.05
+----------------------------------------
+__________________________________________________
+111111.txt
+__________________________________________________
+
+=== Caminho crítico 1 ===
+Startpoint : N3
+Endpoint   : N22
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _9_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
+
+=== Caminho crítico 2 ===
+Startpoint : N3
+Endpoint   : N23
+Slack      : 0.06
+Arrival    : 0.04
+Células:
+  _4_  NANDX2  delay=0.02  time=0.02
+  _5_  NANDX2  delay=0.02  time=0.03
+  _7_  NANDX2  delay=0.01  time=0.04
+----------------------------------------
