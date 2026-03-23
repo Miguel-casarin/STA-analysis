@@ -184,9 +184,10 @@ def debug(sta_file):
             )
         print("-" * 40)
 
-for sta_file in files:
+"""for sta_file in files:
     full_path = os.path.join(deigns_path, sta_file)
     print("_" * 50)
     print(f"{sta_file}")
     print("_" * 50)
-    debug(full_path)
+    debug(full_path)"""
+

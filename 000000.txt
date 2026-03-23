@@ -63,3 +63,32 @@ Path Type: max
            0.06   slack (MET)
 
 
+Startpoint: N100 (input port clocked by virt_clk)
+Endpoint: Nk486 (output port clocked by virt_clk)
+Path Group: virt_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock virt_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.00    0.00 v N3 (in)
+   0.02    0.02 ^ _100_/ZN (NAND2_X1)
+   0.02    0.03 v _5_/ZN (NAND2_X1)
+   0.01    0.04 ^ _7_/ZN (NAND2_X1)
+   0.00    0.04 ^ N23 (out)
+           0.04   data arrival time
+
+   1.10    1.10   clock virt_clk (rise edge)
+   0.00    1.10   clock network delay (ideal)
+   0.00    1.10   clock reconvergence pessimism
+  -1.00    0.10   output external delay
+           0.10   data required time
+---------------------------------------------------------
+           0.10   data required time
+          -0.04   data arrival time
+---------------------------------------------------------
+           0.06   slack (MET)
+
+
