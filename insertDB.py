@@ -37,7 +37,6 @@ def insert_path_info(id, path, startpoint, endpoint, slack, arrival):
 
 
 def get_circuit_id(filename: str):
-    # captura só os números que vêm antes de ".txt"
     m = re.search(r"(\d+)(?=\.txt$)", filename)
     if m:
         return m.group(1)
@@ -49,7 +48,7 @@ for design in files:
     full_path = os.path.join(desins_path, design)
     circuit_id = get_circuit_id(design)
     if circuit_id is None:
-        continue  # pula nomes estranhos
+        continue  
 
     rt = ext_data.Read_timing(full_path)
 
@@ -59,9 +58,9 @@ for design in files:
     startpoints = rt.get_startpint()
     endpoints = rt.get_endpoint()
 
-    # path_id é o índice do caminho crítico (1, 2, 3, ...)
+    # path_id é o índice do caminho crítico 
     for path_id in sorted(cells.keys()):
-        path_num = path_id  # só para clareza
+        path_num = path_id  
 
         sp = startpoints.get(path_id, [{}])[0].get("startpoint")
         ep = endpoints.get(path_id, [{}])[0].get("endpoint")

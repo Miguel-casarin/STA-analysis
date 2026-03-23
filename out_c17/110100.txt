@@ -10,28 +10,28 @@ Endpoint: N22 (output port clocked by virt_clk)
 Path Group: virt_clk
 Path Type: max
 
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock virt_clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 v input external delay
-   0.00    0.00 v N3 (in)
-   0.02    0.02 ^ _4_/ZN (NAND2_X1)
-   0.02    0.04 v _5_/ZN (NAND2_X1)
-   0.01    0.05 ^ _9_/ZN (NAND2_X2)
-   0.00    0.05 ^ N22 (out)
-           0.05   data arrival time
+     Delay       Time   Description
+---------------------------------------------------------------
+   0.00000    0.00000   clock virt_clk (rise edge)
+   0.00000    0.00000   clock network delay (ideal)
+   0.00000    0.00000 v input external delay
+   0.00000    0.00000 v N3 (in)
+   0.02074    0.02074 ^ _4_/ZN (NAND2_X1)
+   0.02189    0.04263 v _5_/ZN (NAND2_X1)
+   0.01090    0.05353 ^ _9_/ZN (NAND2_X2)
+   0.00000    0.05353 ^ N22 (out)
+              0.05353   data arrival time
 
-   1.10    1.10   clock virt_clk (rise edge)
-   0.00    1.10   clock network delay (ideal)
-   0.00    1.10   clock reconvergence pessimism
-  -1.00    0.10   output external delay
-           0.10   data required time
----------------------------------------------------------
-           0.10   data required time
-          -0.05   data arrival time
----------------------------------------------------------
-           0.05   slack (MET)
+   1.10000    1.10000   clock virt_clk (rise edge)
+   0.00000    1.10000   clock network delay (ideal)
+   0.00000    1.10000   clock reconvergence pessimism
+  -1.00000    0.10000   output external delay
+              0.10000   data required time
+---------------------------------------------------------------
+              0.10000   data required time
+             -0.05353   data arrival time
+---------------------------------------------------------------
+              0.04647   slack (MET)
 
 
 Startpoint: N3 (input port clocked by virt_clk)
@@ -39,27 +39,27 @@ Endpoint: N23 (output port clocked by virt_clk)
 Path Group: virt_clk
 Path Type: max
 
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock virt_clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 v input external delay
-   0.00    0.00 v N3 (in)
-   0.02    0.02 ^ _4_/ZN (NAND2_X1)
-   0.02    0.04 v _5_/ZN (NAND2_X1)
-   0.01    0.05 ^ _7_/ZN (NAND2_X1)
-   0.00    0.05 ^ N23 (out)
-           0.05   data arrival time
+     Delay       Time   Description
+---------------------------------------------------------------
+   0.00000    0.00000   clock virt_clk (rise edge)
+   0.00000    0.00000   clock network delay (ideal)
+   0.00000    0.00000 v input external delay
+   0.00000    0.00000 v N3 (in)
+   0.02074    0.02074 ^ _4_/ZN (NAND2_X1)
+   0.02189    0.04263 v _5_/ZN (NAND2_X1)
+   0.01077    0.05340 ^ _7_/ZN (NAND2_X1)
+   0.00000    0.05340 ^ N23 (out)
+              0.05340   data arrival time
 
-   1.10    1.10   clock virt_clk (rise edge)
-   0.00    1.10   clock network delay (ideal)
-   0.00    1.10   clock reconvergence pessimism
-  -1.00    0.10   output external delay
-           0.10   data required time
----------------------------------------------------------
-           0.10   data required time
-          -0.05   data arrival time
----------------------------------------------------------
-           0.05   slack (MET)
+   1.10000    1.10000   clock virt_clk (rise edge)
+   0.00000    1.10000   clock network delay (ideal)
+   0.00000    1.10000   clock reconvergence pessimism
+  -1.00000    0.10000   output external delay
+              0.10000   data required time
+---------------------------------------------------------------
+              0.10000   data required time
+             -0.05340   data arrival time
+---------------------------------------------------------------
+              0.04660   slack (MET)
 
 
