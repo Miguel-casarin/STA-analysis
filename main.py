@@ -2,13 +2,14 @@ import subprocess
 import re
 import os 
 
-import read_v
-import ed_tcl
-import dir
+from scripts import dir
+from scripts import ed_tcl
+from scripts import read_v
 
 file_tcl = "t.tcl"
-dir_circuits = 'c17_x4/'
-dir_out = 'out_c17x4/'
+dir_circuits = 'inputs/'
+dir_out = 'staOutputs/'
+db_name = "sta.db"
 
 circuits = dir.get_files(dir_circuits)
 
@@ -68,5 +69,12 @@ for circuit in circuits:
     
     except:
         print("Erro to run OpenSTA")
-        
+
+if os.path.isfile(db_name):
+    print(f"{db_name} on Dir")
     
+else:
+    from scripts import makeDB
+    from scripts import insertDB
+
+
