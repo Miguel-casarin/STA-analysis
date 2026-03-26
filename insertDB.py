@@ -6,7 +6,7 @@ import dir
 import ext_data
 
 # Puxa os arquivos do diretorio
-desins_path = "out_c17/"
+desins_path = "out_c17x4/"
 files = dir.get_files(desins_path)
 
 # conecta o banco

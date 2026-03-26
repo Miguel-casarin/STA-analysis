@@ -7,8 +7,8 @@ import ed_tcl
 import dir
 
 file_tcl = "t.tcl"
-dir_circuits = 'c17/'
-dir_out = 'out_c17/'
+dir_circuits = 'c17_x4/'
+dir_out = 'out_c17x4/'
 
 circuits = dir.get_files(dir_circuits)
 

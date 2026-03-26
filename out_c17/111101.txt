@@ -14,13 +14,13 @@ Path Type: max
 ---------------------------------------------------------------
    0.00000    0.00000   clock virt_clk (rise edge)
    0.00000    0.00000   clock network delay (ideal)
-   0.00000    0.00000 v input external delay
-   0.00000    0.00000 v N3 (in)
-   0.01463    0.01463 ^ _4_/ZN (NAND2_X2)
-   0.02307    0.03770 v _5_/ZN (NAND2_X1)
-   0.01178    0.04948 ^ _9_/ZN (NAND2_X2)
-   0.00000    0.04948 ^ N22 (out)
-              0.04948   data arrival time
+   0.00000    0.00000 ^ input external delay
+   0.00452    0.00452 ^ N3 (in)
+   0.01432    0.01884 v _4_/ZN (NAND2_X2)
+   0.02669    0.04553 ^ _5_/ZN (NAND2_X1)
+   0.01198    0.05750 v _9_/ZN (NAND2_X2)
+   0.00000    0.05750 v N22 (out)
+              0.05750   data arrival time
 
    1.10000    1.10000   clock virt_clk (rise edge)
    0.00000    1.10000   clock network delay (ideal)
@@ -29,9 +29,9 @@ Path Type: max
               0.10000   data required time
 ---------------------------------------------------------------
               0.10000   data required time
-             -0.04948   data arrival time
+             -0.05750   data arrival time
 ---------------------------------------------------------------
-              0.05052   slack (MET)
+              0.04250   slack (MET)
 
 
 Startpoint: N3 (input port clocked by virt_clk)
@@ -43,13 +43,13 @@ Path Type: max
 ---------------------------------------------------------------
    0.00000    0.00000   clock virt_clk (rise edge)
    0.00000    0.00000   clock network delay (ideal)
-   0.00000    0.00000 v input external delay
-   0.00000    0.00000 v N3 (in)
-   0.01463    0.01463 ^ _4_/ZN (NAND2_X2)
-   0.02307    0.03770 v _5_/ZN (NAND2_X1)
-   0.01178    0.04948 ^ _7_/ZN (NAND2_X2)
-   0.00000    0.04948 ^ N23 (out)
-              0.04948   data arrival time
+   0.00000    0.00000 ^ input external delay
+   0.00452    0.00452 ^ N3 (in)
+   0.01432    0.01884 v _4_/ZN (NAND2_X2)
+   0.02669    0.04553 ^ _5_/ZN (NAND2_X1)
+   0.01198    0.05750 v _7_/ZN (NAND2_X2)
+   0.00000    0.05750 v N23 (out)
+              0.05750   data arrival time
 
    1.10000    1.10000   clock virt_clk (rise edge)
    0.00000    1.10000   clock network delay (ideal)
@@ -58,8 +58,8 @@ Path Type: max
               0.10000   data required time
 ---------------------------------------------------------------
               0.10000   data required time
-             -0.04948   data arrival time
+             -0.05750   data arrival time
 ---------------------------------------------------------------
-              0.05052   slack (MET)
+              0.04250   slack (MET)
 
 

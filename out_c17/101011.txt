@@ -15,12 +15,12 @@ Path Type: max
    0.00000    0.00000   clock virt_clk (rise edge)
    0.00000    0.00000   clock network delay (ideal)
    0.00000    0.00000 v input external delay
-   0.00000    0.00000 v N3 (in)
-   0.01463    0.01463 ^ _4_/ZN (NAND2_X2)
-   0.01726    0.03189 v _6_/ZN (NAND2_X1)
-   0.01242    0.04432 ^ _7_/ZN (NAND2_X2)
-   0.00000    0.04432 ^ N23 (out)
-              0.04432   data arrival time
+   0.00251    0.00251 v N3 (in)
+   0.01675    0.01926 ^ _4_/ZN (NAND2_X2)
+   0.01726    0.03653 v _6_/ZN (NAND2_X1)
+   0.01392    0.05044 ^ _7_/ZN (NAND2_X2)
+   0.00000    0.05044 ^ N23 (out)
+              0.05044   data arrival time
 
    1.10000    1.10000   clock virt_clk (rise edge)
    0.00000    1.10000   clock network delay (ideal)
@@ -29,9 +29,9 @@ Path Type: max
               0.10000   data required time
 ---------------------------------------------------------------
               0.10000   data required time
-             -0.04432   data arrival time
+             -0.05044   data arrival time
 ---------------------------------------------------------------
-              0.05568   slack (MET)
+              0.04956   slack (MET)
 
 
 Startpoint: N3 (input port clocked by virt_clk)
@@ -43,13 +43,13 @@ Path Type: max
 ---------------------------------------------------------------
    0.00000    0.00000   clock virt_clk (rise edge)
    0.00000    0.00000   clock network delay (ideal)
-   0.00000    0.00000 v input external delay
-   0.00000    0.00000 v N3 (in)
-   0.01463    0.01463 ^ _4_/ZN (NAND2_X2)
-   0.01688    0.03151 v _5_/ZN (NAND2_X2)
-   0.00983    0.04133 ^ _9_/ZN (NAND2_X2)
-   0.00000    0.04133 ^ N22 (out)
-              0.04133   data arrival time
+   0.00000    0.00000 ^ input external delay
+   0.00351    0.00351 ^ N3 (in)
+   0.01410    0.01761 v _4_/ZN (NAND2_X2)
+   0.01935    0.03696 ^ _5_/ZN (NAND2_X2)
+   0.01059    0.04754 v _9_/ZN (NAND2_X2)
+   0.00000    0.04754 v N22 (out)
+              0.04754   data arrival time
 
    1.10000    1.10000   clock virt_clk (rise edge)
    0.00000    1.10000   clock network delay (ideal)
@@ -58,8 +58,8 @@ Path Type: max
               0.10000   data required time
 ---------------------------------------------------------------
               0.10000   data required time
-             -0.04133   data arrival time
+             -0.04754   data arrival time
 ---------------------------------------------------------------
-              0.05867   slack (MET)
+              0.05246   slack (MET)
 
 

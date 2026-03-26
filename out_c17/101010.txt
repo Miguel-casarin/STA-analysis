@@ -15,12 +15,12 @@ Path Type: max
    0.00000    0.00000   clock virt_clk (rise edge)
    0.00000    0.00000   clock network delay (ideal)
    0.00000    0.00000 v input external delay
-   0.00000    0.00000 v N3 (in)
-   0.02074    0.02074 ^ _4_/ZN (NAND2_X1)
-   0.01897    0.03971 v _6_/ZN (NAND2_X1)
-   0.01257    0.05229 ^ _7_/ZN (NAND2_X2)
-   0.00000    0.05229 ^ N23 (out)
-              0.05229   data arrival time
+   0.00163    0.00163 v N3 (in)
+   0.02271    0.02434 ^ _4_/ZN (NAND2_X1)
+   0.01897    0.04331 v _6_/ZN (NAND2_X1)
+   0.01407    0.05738 ^ _7_/ZN (NAND2_X2)
+   0.00000    0.05738 ^ N23 (out)
+              0.05738   data arrival time
 
    1.10000    1.10000   clock virt_clk (rise edge)
    0.00000    1.10000   clock network delay (ideal)
@@ -29,9 +29,9 @@ Path Type: max
               0.10000   data required time
 ---------------------------------------------------------------
               0.10000   data required time
-             -0.05229   data arrival time
+             -0.05738   data arrival time
 ---------------------------------------------------------------
-              0.04771   slack (MET)
+              0.04262   slack (MET)
 
 
 Startpoint: N3 (input port clocked by virt_clk)
@@ -44,12 +44,12 @@ Path Type: max
    0.00000    0.00000   clock virt_clk (rise edge)
    0.00000    0.00000   clock network delay (ideal)
    0.00000    0.00000 v input external delay
-   0.00000    0.00000 v N3 (in)
-   0.02074    0.02074 ^ _4_/ZN (NAND2_X1)
-   0.01857    0.03931 v _5_/ZN (NAND2_X2)
-   0.00996    0.04927 ^ _9_/ZN (NAND2_X2)
-   0.00000    0.04927 ^ N22 (out)
-              0.04927   data arrival time
+   0.00163    0.00163 v N3 (in)
+   0.02271    0.02434 ^ _4_/ZN (NAND2_X1)
+   0.01856    0.04290 v _5_/ZN (NAND2_X2)
+   0.01154    0.05444 ^ _9_/ZN (NAND2_X2)
+   0.00000    0.05444 ^ N22 (out)
+              0.05444   data arrival time
 
    1.10000    1.10000   clock virt_clk (rise edge)
    0.00000    1.10000   clock network delay (ideal)
@@ -58,8 +58,8 @@ Path Type: max
               0.10000   data required time
 ---------------------------------------------------------------
               0.10000   data required time
-             -0.04927   data arrival time
+             -0.05444   data arrival time
 ---------------------------------------------------------------
-              0.05073   slack (MET)
+              0.04556   slack (MET)
 
 
