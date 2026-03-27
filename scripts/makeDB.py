@@ -12,6 +12,7 @@ def make_db(name):
         CREATE TABLE CELLS_INFO (
             pk INTEGER PRIMARY KEY AUTOINCREMENT,
             id TEXT,
+            design TEXT,
             cell TEXT,
             type TEXT,
             size TEXT,
@@ -25,6 +26,7 @@ def make_db(name):
         CREATE TABLE PATH_INFO (
             pk INTEGER PRIMARY KEY AUTOINCREMENT,
             id TEXT,
+            design TEXT,
             path INTEGER,
             startpoint TEXT,
             endpoint TEXT,
@@ -37,6 +39,7 @@ def make_db(name):
         CREATE TABLE FEATURES_DESIGNS (
             pk INTEGER PRIMARY KEY AUTOINCREMENT,
             id TEXT,
+            design TEXT,
             cell TEXT,
             fain INTEGER,
             faout INTEGER,
