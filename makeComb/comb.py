@@ -6,7 +6,7 @@ import os
 file = "c17.v"
 output_dir = "../inputs"
 saved_name = file.split(".")[0]
-size = 2
+size = 4
 
 class Extract_info:
     def __init__(self, file, start_block, end_block, process_line):

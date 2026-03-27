@@ -14,7 +14,7 @@ files = dir.get_files(desins_path)
 
 # Diretorio para buscar o base line 
 dir_circuits = 'inputs/'
-dir_lib ='circuitLibrays/ed_Nangate.lib'
+dir_lib = 'circuitLibrays/ed_Nangate.lib'
 baselines = getBase.find_base_line(dir_circuits)
 
 # conecta o banco
@@ -38,8 +38,8 @@ def inset_cells_info(id, design, cell, cell_type, size, delay, time, path):
 def insert_path_info(id, design, path, startpoint, endpoint, slack, arrival):
     cursor.execute(
         """
-        INSERT INTO PATH_INFO (id, path, startpoint, endpoint, slack, arival)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO PATH_INFO (id, design, path, startpoint, endpoint, slack, arival)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
         """,
         (id, design, path, startpoint, endpoint, slack, arrival),
     )
@@ -76,19 +76,21 @@ def insert_features(id, design, cell, fain, faout, nl, deep):
 
 
 
-# Primeira parte do nome do arquivo 
+# Primeira parte do nome do arquivo (campo id)
 def get_circuit_id(filename: str):
-    m = re.search(r"(\d+)(?=\.txt$)", filename)
-    if m:
-        return m.group(1)
+    # "0__c17__X2.txt" -> "0"
+    if "__" in filename:
+        return filename.split("__", 1)[0]
     return None
 
 
-# Loop principal: para cada arquivo de STA
-for design in files:
-    full_path = os.path.join(desins_path, design)
-    circuit_id = get_circuit_id(design)
-    if circuit_id is None:
+# Loop principal: para cada arquivo de STA (0__c17__X2.txt, ...)
+for sta_file in files:
+    full_path = os.path.join(desins_path, sta_file)
+
+    circuit_id = get_circuit_id(sta_file)              # "0"
+    design_name = getDesign.extract_design(sta_file)   # "c17"
+    if circuit_id is None or design_name is None:
         continue  
 
     rt = ext_data.Read_timing(full_path)
@@ -111,6 +113,7 @@ for design in files:
         # Insere uma linha em PATH_INFO para este caminho
         insert_path_info(
             id=circuit_id,
+            design=design_name,
             path=path_num,
             startpoint=sp,
             endpoint=ep,
@@ -122,6 +125,7 @@ for design in files:
         for c in cells[path_id]:
             inset_cells_info(
                 id=circuit_id,
+                design=design_name,
                 cell=c["cell_id"],
                 cell_type=c["type"],
                 size=c["size"],
@@ -129,6 +133,8 @@ for design in files:
                 time=c["time"],
                 path=path_num,
             )
+
+# ===== Inserindo os base lines / FEATURES (NÃO alterado) =====
 # Inserindo os base lines 
 for design in baselines:
     print(f"Baseline: {design}")
