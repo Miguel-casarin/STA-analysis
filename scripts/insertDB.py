@@ -57,6 +57,7 @@ def insert_features(id, cell, fain, faout, nl, deep):
     print(f"ADDING TO FEATURES_DESIGNS: \n{id} {cell} {fain} {faout} {nl} {deep}\n")
     sta_db.commit()
 
+# Primeira parte do nome do arquivo 
 def get_circuit_id(filename: str):
     m = re.search(r"(\d+)(?=\.txt$)", filename)
     if m:
