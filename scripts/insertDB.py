@@ -6,6 +6,7 @@ from scripts import dir
 from scripts import ext_data
 from scripts import getBase
 from scripts import getFeatures
+from scripts import getDesign
 
 # Puxa os arquivos do diretorio
 desins_path = "staOutputs/"
@@ -21,41 +22,59 @@ sta_db = sql.connect("sta.db")
 cursor = sta_db.cursor()
 
 
-def inset_cells_info(id, cell, cell_type, size, delay, time, path):
+def inset_cells_info(id, design, cell, cell_type, size, delay, time, path):
     cursor.execute(
         """
-        INSERT INTO CELLS_INFO (id, cell, type, size, delay, time, path)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO CELLS_INFO (id, design, cell, type, size, delay, time, path)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
-        (id, cell, cell_type, size, delay, time, path),
+        (id, design, cell, cell_type, size, delay, time, path),
     )
 
-    print(f"ADDING TO CELLS_INFO: \n{id} {cell} {cell_type} {size} {delay} {time} {path}\n")
+    print(f"ADDING TO CELLS_INFO: \n{id} {design} {cell} {cell_type} {size} {delay} {time} {path}\n")
     sta_db.commit()
 
 
-def insert_path_info(id, path, startpoint, endpoint, slack, arrival):
+def insert_path_info(id, design, path, startpoint, endpoint, slack, arrival):
     cursor.execute(
         """
         INSERT INTO PATH_INFO (id, path, startpoint, endpoint, slack, arival)
-        VALUES (?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
-        (id, path, startpoint, endpoint, slack, arrival),
+        (id, design, path, startpoint, endpoint, slack, arrival),
     )
 
-    print(f"ADDING TO PATH_INFO: \n{id} {path} {startpoint} {endpoint} {slack} {arrival} \n")
+    print(f"ADDING TO PATH_INFO: \n{id} {design} {path} {startpoint} {endpoint} {slack} {arrival} \n")
     sta_db.commit()
 
-def insert_features(id, cell, fain, faout, nl, deep):
+def insert_features(id, design, cell, fain, faout, nl, deep):
     cursor.execute(
         """
-        INSERT INTO FEATURES_DESIGNS (id, cell, fain, faout, nl, deep)
-        VALUES (?, ?, ?, ?, ?, ?)
+        INSERT INTO FEATURES_DESIGNS (id, design, cell, fain, faout, nl, deep)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
         """,
-        (id, cell, fain, faout, nl, deep),
+        (id, design, cell, fain, faout, nl, deep),
     )
-    print(f"ADDING TO FEATURES_DESIGNS: \n{id} {cell} {fain} {faout} {nl} {deep}\n")
+    print(f"ADDING TO FEATURES_DESIGNS: \n{id} {design} {cell} {fain} {faout} {nl} {deep}\n")
     sta_db.commit()
+
+
+
+
+
+
+
+# Aqui ta o erro de inserção e de pular arquivos de sizes distintos
+# O lop percorre os primeiros caracteries do nome do arquivo ignora os diferentes sizes pq seus caracteries são iguais
+# essa parte precisa ser refatorada para considerar id_design_size
+
+
+
+
+
+
+
+
 
 # Primeira parte do nome do arquivo 
 def get_circuit_id(filename: str):

@@ -14,7 +14,7 @@ db_name = "sta.db"
 circuits = dir.get_files(dir_circuits)
 
 def name_str(string):
-    id = re.match(r'^([^_]+)', string)
+    id = re.match(r'^(.*)\.v$', string)
 
     if id:
         return id.group(1)
