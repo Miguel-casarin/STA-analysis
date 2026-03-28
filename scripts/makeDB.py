@@ -38,7 +38,6 @@ def make_db(name):
     create_features_design = """
         CREATE TABLE FEATURES_DESIGNS (
             pk INTEGER PRIMARY KEY AUTOINCREMENT,
-            id TEXT,
             design TEXT,
             cell TEXT,
             fain INTEGER,

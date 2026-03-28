@@ -44,18 +44,18 @@ def insert_path_info(id, design, path, startpoint, endpoint, slack, arrival):
         (id, design, path, startpoint, endpoint, slack, arrival),
     )
 
-    print(f"ADDING TO PATH_INFO: \n{id} {design} {path} {startpoint} {endpoint} {slack} {arrival} \n")
+    print(f"ADDING TO PATH_INFO: \n{id} {design} {path} {startpoint} {endpoint} {slack} {arrival}\n")
     sta_db.commit()
 
-def insert_features(id, design, cell, fain, faout, nl, deep):
+def insert_features(design, cell, fain, faout, nl, deep):
     cursor.execute(
         """
-        INSERT INTO FEATURES_DESIGNS (id, design, cell, fain, faout, nl, deep)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO FEATURES_DESIGNS (design, cell, fain, faout, nl, deep)
+        VALUES (?, ?, ?, ?, ?, ?)
         """,
-        (id, design, cell, fain, faout, nl, deep),
+        (design, cell, fain, faout, nl, deep),
     )
-    print(f"ADDING TO FEATURES_DESIGNS: \n{id} {design} {cell} {fain} {faout} {nl} {deep}\n")
+    print(f"ADDING TO FEATURES_DESIGNS: \n{design} {cell} {fain} {faout} {nl} {deep}\n")
     sta_db.commit()
 
 
@@ -134,23 +134,22 @@ for sta_file in files:
                 path=path_num,
             )
 
-# ===== Inserindo os base lines / FEATURES (NÃO alterado) =====
+# ===== Inserindo os base lines / FEATURES =====
 # Inserindo os base lines 
 for design in baselines:
     print(f"Baseline: {design}")
 
     verilog_path = os.path.join(dir_circuits, design)
-    
-    circuit_id = design.split("__", 1)[0]   
 
-    
+    # nome do design (meio de id__design__size)
+    design_name = getDesign.extract_design(design)   # ex.: "c17"
+
     features = getFeatures.Circuits_features(verilog_path, dir_lib)
-    fanin = features.fan_in()                # dict: cell -> fan_in
-    fanout = features.fan_out()              # dict: cell -> fan_out
-    logic_level = features.compute_logic_levels()  # dict: cell -> nl
-    deep = features.comput_deep()            # dict: cell -> deep
+    fanin = features.fan_in()
+    fanout = features.fan_out()
+    logic_level = features.compute_logic_levels()
+    deep = features.comput_deep()
 
-    # insere uma linha por célula
     for cell_name in fanin.keys():
         f_in = fanin.get(cell_name, 0)
         f_out = fanout.get(cell_name, 0)
@@ -158,13 +157,12 @@ for design in baselines:
         dp = deep.get(cell_name)
 
         insert_features(
-            id=circuit_id,
+            design=design_name,
             cell=cell_name,
             fain=f_in,
             faout=f_out,
             nl=nl,
             deep=dp,
         )
-
     
 sta_db.close()
