@@ -27,6 +27,7 @@ def make_db(name):
             pk INTEGER PRIMARY KEY AUTOINCREMENT,
             id TEXT,
             design TEXT,
+            size TEXT,
             path INTEGER,
             startpoint TEXT,
             endpoint TEXT,

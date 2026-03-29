@@ -35,16 +35,16 @@ def inset_cells_info(id, design, cell, cell_type, size, delay, time, path):
     sta_db.commit()
 
 
-def insert_path_info(id, design, path, startpoint, endpoint, slack, arrival):
+def insert_path_info(id, design, size, path, startpoint, endpoint, slack, arrival):
     cursor.execute(
         """
-        INSERT INTO PATH_INFO (id, design, path, startpoint, endpoint, slack, arival)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO PATH_INFO (id, design, size, path, startpoint, endpoint, slack, arival)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
-        (id, design, path, startpoint, endpoint, slack, arrival),
+        (id, design, size, path, startpoint, endpoint, slack, arrival),
     )
 
-    print(f"ADDING TO PATH_INFO: \n{id} {design} {path} {startpoint} {endpoint} {slack} {arrival}\n")
+    print(f"ADDING TO PATH_INFO: \n{id} {design} {size} {path} {startpoint} {endpoint} {slack} {arrival}\n")
     sta_db.commit()
 
 def insert_features(design, cell, fain, faout, nl, deep):
@@ -59,23 +59,6 @@ def insert_features(design, cell, fain, faout, nl, deep):
     sta_db.commit()
 
 
-
-
-
-
-
-# Aqui ta o erro de inserção e de pular arquivos de sizes distintos
-# O lop percorre os primeiros caracteries do nome do arquivo ignora os diferentes sizes pq seus caracteries são iguais
-# essa parte precisa ser refatorada para considerar id_design_size
-
-
-
-
-
-
-
-
-
 # Primeira parte do nome do arquivo (campo id)
 def get_circuit_id(filename: str):
     # "0__c17__X2.txt" -> "0"
@@ -83,14 +66,25 @@ def get_circuit_id(filename: str):
         return filename.split("__", 1)[0]
     return None
 
+# Última parte do nome do arquivo 
+def get_circuit_size(filename: str):
+    # "0__c17__X2.txt" -> "X2"
+    parts = filename.split("__")
+    if len(parts) >= 3:
+        size_part = parts[2]
+        return os.path.splitext(size_part)[0]  # tira ".txt"
+    return None
 
-# Loop principal: para cada arquivo de STA (0__c17__X2.txt, ...)
+
+# Loop principal: para cada arquivo de STA 
 for sta_file in files:
     full_path = os.path.join(desins_path, sta_file)
 
-    circuit_id = get_circuit_id(sta_file)              # "0"
-    design_name = getDesign.extract_design(sta_file)   # "c17"
-    if circuit_id is None or design_name is None:
+    circuit_id = get_circuit_id(sta_file)             
+    design_name = getDesign.extract_design(sta_file)   
+    circuit_size = get_circuit_size(sta_file)          
+
+    if circuit_id is None or design_name is None or circuit_size is None:
         continue  
 
     rt = ext_data.Read_timing(full_path)
@@ -114,6 +108,7 @@ for sta_file in files:
         insert_path_info(
             id=circuit_id,
             design=design_name,
+            size=circuit_size,   
             path=path_num,
             startpoint=sp,
             endpoint=ep,
@@ -134,7 +129,6 @@ for sta_file in files:
                 path=path_num,
             )
 
-# ===== Inserindo os base lines / FEATURES =====
 # Inserindo os base lines 
 for design in baselines:
     print(f"Baseline: {design}")
@@ -142,7 +136,7 @@ for design in baselines:
     verilog_path = os.path.join(dir_circuits, design)
 
     # nome do design (meio de id__design__size)
-    design_name = getDesign.extract_design(design)   # ex.: "c17"
+    design_name = getDesign.extract_design(design)   
 
     features = getFeatures.Circuits_features(verilog_path, dir_lib)
     fanin = features.fan_in()

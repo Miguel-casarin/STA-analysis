@@ -193,7 +193,4 @@ def generate_combinations(verilog_file, size, output_dir=None, mode="all", max_c
 
 
 if __name__ == "__main__":
-    # Ex.:
-    # - mode="neighbors" -> gera 000000 + 000001 + 000010 + ...
-    # - mode="all" -> gera todas as combinações (2^n)
     generate_combinations(file, size=size, output_dir=output_dir, mode="all")
